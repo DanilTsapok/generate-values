@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 8</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>   
+    <div class="auth" id="auth">
+        <div class="auth-pos">
+            <form id="form-c">
+                <i class='bx bx-user-circle'></i>
+                <p class="name-player">Ім'я гравця</p>
+                <input type="text" id="name-user">
+                <div class="pos-btn ">
+                    <a href="#form-c"class="auth-btn" onclick="auth()">Play</a>
+                </div>           
+            </form> 
+        </div>
+    </div>
+    <div class="start">
+         <a href="#auth"class="start-game" >PLAY</a>
+    </div>
+    <div class="pos-game">
+        <div class="game" id="game-1">
+            <div class="pos-start">
+                <div class="comp" >
+                    <span id="name">User</span>  
+                </div>
+                 <div class="comp" >
+                    <span id="comput">Computer</span>
+                 </div>           
+            </div>
+            <p class="pos-bal">Кількість балів:</p>
+            <div class="pos-start">
+                
+                <div class="comp">
+                    
+                    <span id="point1"></span>
+                 </div>
+                 <div class="comp">   
+                    <span id="point2"></span>                
+                 </div>
+            </div>                
+            <div class="content">
+                <button onclick="func()"class="auth-btn" id="btn" >Generate</button>
+                <div class="result">
+                    <p id="result1"class="comp"></p>
+                    <i class='bx bx-expand-horizontal'></i>
+                    <p id="result2"class="comp"></p>
+                </div>
+            </div>                  
+        </div>
+    </div>
+</body>
+</html>
